@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Positioning</title>
+ <style>
+   html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   .wrapper{
+    background-color: burlywood;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+   .wrapper h3{
+    padding: 10px;
+    text-align: center;
+   }
+   .box {
+    width: 120px;
+    height: 80px;
+    color: #fff;
+    background-color: brown;
+    padding: 10px;
+
+   }
+   .top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+   .top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+   }
+   .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+   .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   }
+   .bottom-right{
+    position: absolute;
+    bottom :0;
+    right: 0;
+   }
+/*Elements are positioning relatively to their parent element*/
+
+ </style>
+</head>
+<body>
+ <div class="wrapper">
+ <h3> Relative and Absolute Positioning</h3>
+ <div class="box top-left">Top left</div>
+ <div class="box top-right">Top Right</div>
+ <div class="box center"> Top Center</div>
+ <div class="box bottom-left">Bottom Left</div>
+ <div class="box bottom-right"> Bottom Right</div>
+ </div
+</body>
+</html>
